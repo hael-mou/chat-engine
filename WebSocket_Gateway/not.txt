@@ -1,0 +1,14 @@
+
+pip install Django==4.2.16
+python -m pip install -U 'channels[daphne]'
+pip install aio-pika
+
+
+# message :
+{
+    "tn": 1,
+    "type": "group",
+    "to": "1",
+    "contentType": "txt",
+    "body": "Hello this a text message"
+}
