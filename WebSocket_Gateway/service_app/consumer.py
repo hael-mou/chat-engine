@@ -109,8 +109,8 @@ class AsyncChatConsumer(AsyncWebsocketConsumer):
         })
 
         await self.message_queue.publish_message(
-            message     = message.encode(),
-            queue_name  = "--user-state",
+            message         = message.encode(),
+            exchange_name   = "--user-state",
         )
 
 
